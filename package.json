@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
+   "deploy": "gh-pages -b master -d build",
   },
   "author": "Adam La Morre",
   "license": "ISC",
